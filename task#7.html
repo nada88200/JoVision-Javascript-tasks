@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript"> 
+
+function Time(){
+
+const date = new Date();
+const hours = date.getHours();
+const minutes = date.getMinutes();
+const seconds =  date.getSeconds();
+document.getElementById("H3").innerHTML=hours+":"+minutes+":"+seconds;
+}
+
+setInterval(Time, 1000);
+Time();
+</script>
+</head>
+
+<body>
+
+<h3 id="H3"></h3>
+
+</body>
+</html>

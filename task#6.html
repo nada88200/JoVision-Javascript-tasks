@@ -1,0 +1,71 @@
+<html>
+<head>
+<script type="text/javascript"> 
+
+function newArray(){
+var  A = [];
+for(var i=0;i<=100;i++){
+if(i%3!=0){
+A[i]=i;
+}}
+console.log(A);
+}
+
+function addArray(){
+var  A = [];
+for(var i=0;i<=100;i++){
+A[i]=i;
+}
+for(var j=101;j<151;j++){
+A.push(j);
+}
+console.log(A);}
+
+function additionArray(){
+var  A = [];
+for(var i=0;i<=100;i++){
+A[i]=i+3;
+
+}
+console.log(A);}
+
+function indexArray(){
+var  A = [];
+for(var i=0;i<=100;i++){
+if(i>=20 && i<=40)
+A[i]=i;
+}
+console.log(A);}
+
+ function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+          let j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+	
+
+function descArray(){
+var  A = [];
+for(var i=0;i<=100;i++){
+A[i]=i;
+}
+shuffleArray(A);
+A.sort((a, b) => b - a);
+console.log(A);
+}
+
+
+
+</script>
+</head>
+
+<body>
+<button onclick="newArray()">Button#1</button> 
+<button onclick="addArray()">Button#2</button>
+<button onclick="additionArray()">Button#3</button>
+<button onclick="indexArray()">Button#4</button> 
+<button onclick="descArray()">Button#5</button> 
+
+</body>
+</html>
