@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>task#12</title>
+
+    <style>
+       
+        input {
+            width: 150px;
+            height: 30px;
+        }
+
+        button{
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+
+        }
+    </style>
+    <script>
+        function Display(){
+
+            const Timestamp = new Date();
+            var Name = document.getElementById("nametext").value || undefined;
+            var Age = document.getElementById("agetext").value  || undefined;
+
+            const user ={
+    	    name: Name,
+    	    age : Age,
+    	    timestamp : Timestamp.toString(),
+	}
+
+
+            window.alert("Your name is: "+user.name +"\n"+"Your age is: "+user.age +"\n"+"The time and Date: "+user.timestamp);
+            
+            
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Name" id="nametext" ><br><br>
+    <input type="text" placeholder="Age" id="agetext" ><br><br>
+    <button onclick="Display()">Submit</button>
+</body>
+</html>
