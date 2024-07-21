@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task#11</title>
+    <script>
+        
+    
+    
+        function requested(){
+            fetch("https://api.ipify.orgx/")
+            .then(Response => Response.json())
+            .then(data =>{
+                document.getElementById("button1").innerHTML = data.ip;
+            })
+            .catch(error => {
+               window.alert(error);
+               console.error(error);
+            });
+        }
+</script>
+</head>
+<body>
+    <button onclick="requested()" id="button1">Get ip</button>
+    
+    
+</body>
+</html>
